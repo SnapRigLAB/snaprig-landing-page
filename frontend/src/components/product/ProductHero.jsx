@@ -16,9 +16,9 @@ const PRODUCT = {
   soldCount: '2.3K+',
   stockCount: 23,
   images: [
-    'https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/vlx8aw18_imagine_2026-01-03_174822806.png',
-    'https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/n7la627d_Aacdba26b48e044eeb360e5988afc73e0l.avif',
-    'https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/iaokkdrj_A8db6d82ddcec4a1d8402356f6736d77cU.avif'
+    'https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/9i2vjw3l_39a128af-4b51-41bb-a000-077a893a6a22.webp',
+    'https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/qzoiuc99_27780cf4-cbca-480b-8ed1-8caa7634a554.webp',
+    'https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/vlx8aw18_imagine_2026-01-03_174822806.png'
   ],
   colors: [
     { name: 'Black', value: 'black', hex: '#000000' }
