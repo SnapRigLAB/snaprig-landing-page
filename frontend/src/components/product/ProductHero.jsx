@@ -273,12 +273,12 @@ export default function ProductHero({ selectedColor, setSelectedColor, quantity,
             <h3 className="font-bold mb-4 text-lg">Why You'll Love It:</h3>
             <ul className="space-y-3">
               {[
-                '✓ Hands-free hydration with secure water bottle holder',
-                '✓ Easy-access phone pocket for music & calls',
+                '✓ Hands-free gym bag with secure water bottle holder',
+                '✓ Transparent phone pocket for easy access during workouts',
                 '✓ Multiple compartments for keys, cards, and essentials',
-                '✓ Premium water-resistant material',
-                '✓ Adjustable strap fits all body types',
-                '✓ Perfect for gym, running, hiking, or travel'
+                '✓ Premium water-resistant nylon material',
+                '✓ Adjustable crossbody strap for comfortable wear',
+                '✓ Perfect for gym, running, hiking, cycling, or travel'
               ].map((feature, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <span className="text-success font-semibold text-lg">✓</span>
