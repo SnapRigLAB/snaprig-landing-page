@@ -77,12 +77,27 @@ export default function ProductFooter() {
       {/* Footer Bottom */}
       <div className="border-t border-border">
         <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-            <p>© 2024 SnapRig Lab. All rights reserved.</p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-foreground transition-colors">Contact Us</a>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            {/* Payment Methods */}
+            <div className="flex items-center gap-3">
+              <span className="text-sm text-muted-foreground">We accept:</span>
+              <div className="flex items-center gap-2">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/8p9whjpf_image.png" 
+                  alt="Payment methods" 
+                  className="h-6"
+                />
+              </div>
+            </div>
+            
+            {/* Copyright and Links */}
+            <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-muted-foreground">
+              <p>© 2024 SnapRig Lab. All rights reserved.</p>
+              <div className="flex gap-6">
+                <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
+                <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
+                <a href="#" className="hover:text-foreground transition-colors">Contact Us</a>
+              </div>
             </div>
           </div>
         </div>
