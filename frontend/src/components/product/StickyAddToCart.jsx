@@ -13,10 +13,10 @@ export default function StickyAddToCart({ show, selectedColor, quantity }) {
   const currentPrice = currentVariant.price;
   
   const handleBuyNow = () => {
-    // Add to cart and immediately go to checkout
-    const addToCartUrl = `https://${SHOPIFY_STORE}/cart/add?id=${currentVariant.variantId}&quantity=${quantity}&return_to=/checkout`;
-    console.log('Sticky cart - Buy now:', addToCartUrl);
-    window.location.href = addToCartUrl;
+    // Direct checkout link - bypasses cart and homepage
+    const checkoutUrl = `https://${SHOPIFY_STORE}/checkout?line_items=${currentVariant.variantId}:${quantity}`;
+    console.log('Sticky cart - Direct checkout:', checkoutUrl);
+    window.location.href = checkoutUrl;
   };
 
   return (
