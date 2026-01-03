@@ -188,27 +188,23 @@ export default function ProductHero({ selectedColor, setSelectedColor, quantity,
             </div>
           </Card>
           
-          {/* Color selector */}
+          {/* Variant selector */}
           <div className="space-y-3">
             <label className="text-sm font-semibold">
-              Color: <span className="text-muted-foreground font-normal">{selectedColor}</span>
+              Option: <span className="text-muted-foreground font-normal">{selectedColor}</span>
             </label>
             <div className="flex gap-3">
-              {PRODUCT.colors.map((color) => (
+              {PRODUCT.variants.map((variant) => (
                 <button
-                  key={color.value}
-                  onClick={() => setSelectedColor(color.value)}
-                  className={`relative w-12 h-12 rounded-full border-2 transition-all ${
-                    selectedColor === color.value
-                      ? 'border-primary scale-110 shadow-lg'
-                      : 'border-border hover:border-muted-foreground'
+                  key={variant.value}
+                  onClick={() => setSelectedColor(variant.value)}
+                  className={`px-6 py-3 rounded-lg border-2 font-semibold transition-all ${
+                    selectedColor === variant.value
+                      ? 'border-primary bg-primary text-primary-foreground shadow-md scale-105'
+                      : 'border-border hover:border-primary hover:bg-muted'
                   }`}
-                  style={{ backgroundColor: color.hex }}
-                  title={color.name}
                 >
-                  {selectedColor === color.value && (
-                    <Check className="w-5 h-5 text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-                  )}
+                  {variant.name}
                 </button>
               ))}
             </div>
