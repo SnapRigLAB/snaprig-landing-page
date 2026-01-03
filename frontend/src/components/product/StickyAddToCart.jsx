@@ -1,15 +1,20 @@
 import { ShoppingCart, Star } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Badge } from '../ui/badge';
-import { toast } from 'sonner';
+
+const VARIANTS = [
+  { value: '2-magnets', variantId: '56970937532761', price: 38.46 },
+  { value: '3-magnets', variantId: '56970937565529', price: 40.30 }
+];
+const SHOPIFY_STORE = 'snapr-3.myshopify.com';
 
 export default function StickyAddToCart({ show, selectedColor, quantity }) {
-  const salePrice = 29.99;
+  const currentVariant = VARIANTS.find(v => v.value === selectedColor) || VARIANTS[0];
+  const currentPrice = currentVariant.price;
   
   const handleBuyNow = () => {
-    toast.success('Proceeding to checkout...', {
-      description: 'Redirecting you to secure checkout'
-    });
+    // Redirect directly to Shopify checkout
+    window.location.href = `https://${SHOPIFY_STORE}/cart/${currentVariant.variantId}:${quantity}?checkout=true`;
   };
 
   return (
