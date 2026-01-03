@@ -196,7 +196,7 @@ export default function ProductHero({ selectedColor, setSelectedColor, quantity,
           {/* Variant selector */}
           <div className="space-y-3">
             <label className="text-sm font-semibold">
-              Option: <span className="text-muted-foreground font-normal">{selectedColor}</span>
+              Option: <span className="text-muted-foreground font-normal">{currentVariant.name}</span>
             </label>
             <div className="flex gap-3">
               {PRODUCT.variants.map((variant) => (
