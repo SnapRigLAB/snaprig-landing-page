@@ -44,9 +44,17 @@ export default function ProductHero({ selectedColor, setSelectedColor, quantity,
   };
 
   const handleBuyNow = () => {
-    // Direct checkout link - bypasses cart page
-    const checkoutUrl = `https://${PRODUCT.shopifyStore}/checkout?line_items=${currentVariant.variantId}:${quantity}`;
-    console.log('Buy now - direct checkout:', checkoutUrl);
+    // Multiple checkout URL formats to try
+    const checkoutUrls = [
+      `https://${PRODUCT.shopifyStore}/cart/${currentVariant.variantId}:${quantity}`,
+      `https://${PRODUCT.shopifyStore}/${currentVariant.variantId}:${quantity}`,
+    ];
+    
+    // Use the cart URL format which is most reliable
+    const checkoutUrl = checkoutUrls[0];
+    console.log('Buy now - redirecting to:', checkoutUrl);
+    
+    // Redirect to Shopify
     window.location.href = checkoutUrl;
   };
 
