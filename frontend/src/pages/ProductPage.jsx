@@ -10,7 +10,7 @@ import StickyAddToCart from '../components/product/StickyAddToCart';
 
 export default function ProductPage() {
   const [showStickyCart, setShowStickyCart] = useState(false);
-  const [selectedColor, setSelectedColor] = useState('black');
+  const [selectedColor, setSelectedColor] = useState('2-magnets');
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
