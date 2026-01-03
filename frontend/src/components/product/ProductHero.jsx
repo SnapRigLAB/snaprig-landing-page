@@ -255,7 +255,7 @@ export default function ProductHero({ selectedColor, setSelectedColor, quantity,
               onClick={handleBuyNow}
             >
               <ShoppingCart className="w-5 h-5 mr-2" />
-              BUY NOW - ${(PRODUCT.salePrice * quantity).toFixed(2)}
+              BUY NOW - ${(currentPrice * quantity).toFixed(2)}
             </Button>
             <Button 
               size="lg" 
