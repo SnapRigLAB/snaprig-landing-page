@@ -29,11 +29,6 @@ export default function ProductHero({ selectedColor, setSelectedColor, quantity,
   const [selectedImage, setSelectedImage] = useState(0);
   const [isFavorite, setIsFavorite] = useState(false);
 
-  // Set default to 2 magnets if not already set
-  if (!selectedColor) {
-    setSelectedColor('2-magnets');
-  }
-
   // Get current variant details
   const currentVariant = PRODUCT.variants.find(v => v.value === selectedColor) || PRODUCT.variants[0];
   const currentPrice = currentVariant.price;
@@ -43,12 +38,16 @@ export default function ProductHero({ selectedColor, setSelectedColor, quantity,
 
   const handleAddToCart = () => {
     // Redirect to Shopify cart with the selected variant
-    window.location.href = `https://${PRODUCT.shopifyStore}/cart/${currentVariant.variantId}:${quantity}`;
+    const redirectUrl = `https://${PRODUCT.shopifyStore}/cart/${currentVariant.variantId}:${quantity}`;
+    console.log('Redirecting to:', redirectUrl);
+    window.location.href = redirectUrl;
   };
 
   const handleBuyNow = () => {
     // Redirect directly to Shopify checkout with the selected variant
-    window.location.href = `https://${PRODUCT.shopifyStore}/cart/${currentVariant.variantId}:${quantity}?checkout=true`;
+    const redirectUrl = `https://${PRODUCT.shopifyStore}/cart/${currentVariant.variantId}:${quantity}?checkout=true`;
+    console.log('Redirecting to:', redirectUrl);
+    window.location.href = redirectUrl;
   };
 
   return (
