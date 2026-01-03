@@ -30,7 +30,7 @@ export default function StickyAddToCart({ show, selectedColor, quantity }) {
               />
             </div>
             <div className="space-y-1">
-              <h3 className="font-bold text-sm sm:text-base">Premium Gym Water Bottle Pouch</h3>
+              <h3 className="font-bold text-sm sm:text-base">Snaprig GymBag M1</h3>
               <div className="flex items-center gap-2 flex-wrap">
                 <div className="flex items-center gap-0.5">
                   {[...Array(5)].map((_, i) => (
