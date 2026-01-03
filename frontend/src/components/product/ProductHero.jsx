@@ -34,20 +34,21 @@ export default function ProductHero({ selectedColor, setSelectedColor, quantity,
     setSelectedColor('2-magnets');
   }
 
+  // Get current variant details
+  const currentVariant = PRODUCT.variants.find(v => v.value === selectedColor) || PRODUCT.variants[0];
+  const currentPrice = currentVariant.price;
+  const currentOriginalPrice = currentVariant.originalPrice;
+  const savings = currentOriginalPrice - currentPrice;
+  const discountPercent = Math.round((savings / currentOriginalPrice) * 100);
+
   const handleAddToCart = () => {
-    toast.success('Added to cart!', {
-      description: `${quantity} x ${PRODUCT.name} (${selectedColor})`,
-      action: {
-        label: 'View Cart',
-        onClick: () => console.log('View cart clicked')
-      }
-    });
+    // Redirect to Shopify cart with the selected variant
+    window.location.href = `https://${PRODUCT.shopifyStore}/cart/${currentVariant.variantId}:${quantity}`;
   };
 
   const handleBuyNow = () => {
-    toast.success('Proceeding to checkout...', {
-      description: 'Redirecting you to secure checkout'
-    });
+    // Redirect directly to Shopify checkout with the selected variant
+    window.location.href = `https://${PRODUCT.shopifyStore}/cart/${currentVariant.variantId}:${quantity}?checkout=true`;
   };
 
   return (
