@@ -24,7 +24,7 @@ export default function StickyAddToCart({ show, selectedColor, quantity }) {
           <div className="flex items-center gap-4">
             <div className="hidden sm:block w-16 h-16 bg-muted rounded-lg overflow-hidden">
               <img 
-                src="https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/vlx8aw18_imagine_2026-01-03_174822806.png" 
+                src="https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/9i2vjw3l_39a128af-4b51-41bb-a000-077a893a6a22.webp" 
                 alt="Product"
                 className="w-full h-full object-cover"
               />
