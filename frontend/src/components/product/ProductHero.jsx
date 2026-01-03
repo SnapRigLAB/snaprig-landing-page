@@ -44,8 +44,8 @@ export default function ProductHero({ selectedColor, setSelectedColor, quantity,
   };
 
   const handleBuyNow = () => {
-    // Redirect to product page with variant selected - this will show the working "Pay with SHOP" button
-    const productUrl = `https://${PRODUCT.shopifyStore}/products/gym-bag-water-bottle-holder?variant=${currentVariant.variantId}`;
+    // Redirect to product page with variant - this shows the working "Pay with SHOP" button
+    const productUrl = `https://${PRODUCT.shopifyStore}/products/snagrip-pro-carrier-m1?variant=${currentVariant.variantId}`;
     console.log('Buy now - redirecting to product page:', productUrl);
     window.location.href = productUrl;
   };
