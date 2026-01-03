@@ -24,7 +24,7 @@ export default function StickyAddToCart({ show, selectedColor, quantity }) {
           <div className="flex items-center gap-4">
             <div className="hidden sm:block w-16 h-16 bg-muted rounded-lg overflow-hidden">
               <img 
-                src="https://images.pexels.com/photos/17755959/pexels-photo-17755959.jpeg?w=200&q=80" 
+                src="https://images.unsplash.com/photo-1621985191560-99df9ed0564a?w=200&q=80" 
                 alt="Product"
                 className="w-full h-full object-cover"
               />
