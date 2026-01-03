@@ -8,8 +8,7 @@ import { toast } from 'sonner';
 const PRODUCT = {
   name: 'Snaprig GymBag M1',
   subtitle: 'Crossbody Shoulder Bag with Water Bottle Holder & Phone Pocket',
-  originalPrice: 59.99,
-  salePrice: 29.99,
+  originalPrice: 79.99,
   discount: 50,
   rating: 4.8,
   reviewCount: 1247,
@@ -20,9 +19,10 @@ const PRODUCT = {
     'https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/qzoiuc99_27780cf4-cbca-480b-8ed1-8caa7634a554.webp'
   ],
   variants: [
-    { name: '2 Magnets', value: '2-magnets', variantId: '' },
-    { name: '3 Magnets', value: '3-magnets', variantId: '' }
-  ]
+    { name: '2 Magnets', value: '2-magnets', variantId: '56970937532761', price: 38.46, originalPrice: 76.92 },
+    { name: '3 Magnets', value: '3-magnets', variantId: '56970937565529', price: 40.30, originalPrice: 80.60 }
+  ],
+  shopifyStore: 'snapr-3.myshopify.com'
 };
 
 export default function ProductHero({ selectedColor, setSelectedColor, quantity, setQuantity }) {
