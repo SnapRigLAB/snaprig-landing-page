@@ -18,9 +18,7 @@ const PRODUCT = {
   images: [
     'https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/vlx8aw18_imagine_2026-01-03_174822806.png',
     'https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/n7la627d_Aacdba26b48e044eeb360e5988afc73e0l.avif',
-    'https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/iaokkdrj_A8db6d82ddcec4a1d8402356f6736d77cU.avif',
-    'https://images.unsplash.com/photo-1663791088119-07535b0fafeb?w=800&q=80',
-    'https://images.unsplash.com/photo-1640101943658-793b33888edb?w=800&q=80'
+    'https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/iaokkdrj_A8db6d82ddcec4a1d8402356f6736d77cU.avif'
   ],
   colors: [
     { name: 'Black', value: 'black', hex: '#000000' },
