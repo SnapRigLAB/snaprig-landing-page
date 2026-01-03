@@ -54,7 +54,7 @@ export default function StickyAddToCart({ show, selectedColor, quantity }) {
           <div className="flex items-center gap-3">
             <div className="text-right hidden sm:block">
               <div className="text-2xl font-bold text-primary">
-                ${(salePrice * quantity).toFixed(2)}
+                ${(currentPrice * quantity).toFixed(2)}
               </div>
               <div className="text-xs text-muted-foreground">
                 Qty: {quantity}
@@ -67,7 +67,7 @@ export default function StickyAddToCart({ show, selectedColor, quantity }) {
             >
               <ShoppingCart className="w-5 h-5 mr-2" />
               <span className="hidden sm:inline">BUY NOW</span>
-              <span className="sm:hidden">${(salePrice * quantity).toFixed(2)}</span>
+              <span className="sm:hidden">${(currentPrice * quantity).toFixed(2)}</span>
             </Button>
           </div>
         </div>
