@@ -29,6 +29,11 @@ export default function ProductHero({ selectedColor, setSelectedColor, quantity,
   const [selectedImage, setSelectedImage] = useState(0);
   const [isFavorite, setIsFavorite] = useState(false);
 
+  // Set default to 2 magnets if not already set
+  if (!selectedColor) {
+    setSelectedColor('2-magnets');
+  }
+
   const handleAddToCart = () => {
     toast.success('Added to cart!', {
       description: `${quantity} x ${PRODUCT.name} (${selectedColor})`,
