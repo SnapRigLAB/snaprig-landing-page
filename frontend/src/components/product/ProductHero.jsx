@@ -173,14 +173,14 @@ export default function ProductHero({ selectedColor, setSelectedColor, quantity,
           <div className="space-y-2">
             <div className="flex items-baseline gap-3">
               <span className="text-4xl font-bold text-primary">
-                ${PRODUCT.salePrice.toFixed(2)}
+                ${currentPrice.toFixed(2)}
               </span>
               <span className="text-2xl text-muted-foreground line-through">
-                ${PRODUCT.originalPrice.toFixed(2)}
+                ${currentOriginalPrice.toFixed(2)}
               </span>
             </div>
             <p className="text-sm text-muted-foreground">
-              You save <span className="font-semibold text-success">${(PRODUCT.originalPrice - PRODUCT.salePrice).toFixed(2)} ({PRODUCT.discount}%)</span>
+              You save <span className="font-semibold text-success">${savings.toFixed(2)} ({discountPercent}%)</span>
             </p>
           </div>
           
