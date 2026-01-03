@@ -19,8 +19,9 @@ const PRODUCT = {
     'https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/9i2vjw3l_39a128af-4b51-41bb-a000-077a893a6a22.webp',
     'https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/qzoiuc99_27780cf4-cbca-480b-8ed1-8caa7634a554.webp'
   ],
-  colors: [
-    { name: 'Black', value: 'black', hex: '#000000' }
+  variants: [
+    { name: '2 Magnets', value: '2-magnets', variantId: '' },
+    { name: '3 Magnets', value: '3-magnets', variantId: '' }
   ]
 };
 
