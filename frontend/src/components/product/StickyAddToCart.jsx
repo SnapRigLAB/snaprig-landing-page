@@ -13,8 +13,10 @@ export default function StickyAddToCart({ show, selectedColor, quantity }) {
   const currentPrice = currentVariant.price;
   
   const handleBuyNow = () => {
-    // Redirect directly to Shopify checkout
-    window.location.href = `https://${SHOPIFY_STORE}/cart/${currentVariant.variantId}:${quantity}?checkout=true`;
+    // Add to cart and immediately go to checkout
+    const addToCartUrl = `https://${SHOPIFY_STORE}/cart/add?id=${currentVariant.variantId}&quantity=${quantity}&return_to=/checkout`;
+    console.log('Sticky cart - Buy now:', addToCartUrl);
+    window.location.href = addToCartUrl;
   };
 
   return (
