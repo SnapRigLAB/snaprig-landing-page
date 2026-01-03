@@ -21,9 +21,7 @@ const PRODUCT = {
     'https://customer-assets.emergentagent.com/job_1476c465-a242-4fac-a123-cc38619c6fa5/artifacts/iaokkdrj_A8db6d82ddcec4a1d8402356f6736d77cU.avif'
   ],
   colors: [
-    { name: 'Black', value: 'black', hex: '#000000' },
-    { name: 'Navy Blue', value: 'navy', hex: '#1e3a8a' },
-    { name: 'Charcoal Gray', value: 'gray', hex: '#4b5563' }
+    { name: 'Black', value: 'black', hex: '#000000' }
   ]
 };
 
