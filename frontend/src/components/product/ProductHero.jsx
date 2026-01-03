@@ -37,17 +37,17 @@ export default function ProductHero({ selectedColor, setSelectedColor, quantity,
   const discountPercent = Math.round((savings / currentOriginalPrice) * 100);
 
   const handleAddToCart = () => {
-    // Add to Shopify cart using proper format
-    const redirectUrl = `https://${PRODUCT.shopifyStore}/cart/add?id=${currentVariant.variantId}&quantity=${quantity}`;
+    // Add to Shopify cart page
+    const redirectUrl = `https://${PRODUCT.shopifyStore}/cart/${currentVariant.variantId}:${quantity}`;
     console.log('Adding to cart:', redirectUrl);
     window.location.href = redirectUrl;
   };
 
   const handleBuyNow = () => {
-    // Add to cart and immediately go to checkout
-    const addToCartUrl = `https://${PRODUCT.shopifyStore}/cart/add?id=${currentVariant.variantId}&quantity=${quantity}&return_to=/checkout`;
-    console.log('Buy now - redirecting to:', addToCartUrl);
-    window.location.href = addToCartUrl;
+    // Direct checkout link - bypasses cart page
+    const checkoutUrl = `https://${PRODUCT.shopifyStore}/checkout?line_items=${currentVariant.variantId}:${quantity}`;
+    console.log('Buy now - direct checkout:', checkoutUrl);
+    window.location.href = checkoutUrl;
   };
 
   return (
