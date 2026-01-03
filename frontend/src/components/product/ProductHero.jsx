@@ -16,10 +16,10 @@ const PRODUCT = {
   soldCount: '2.3K+',
   stockCount: 23,
   images: [
-    'https://images.unsplash.com/photo-1667862714309-359b48ec1f1d?w=800&q=80',
-    'https://images.unsplash.com/photo-1687703479566-3a6b6c1c277f?w=800&q=80',
-    'https://images.unsplash.com/photo-1581122584612-713f89daa8eb?w=800&q=80',
-    'https://images.unsplash.com/photo-1588906467701-6d5e8dac4353?w=800&q=80'
+    'https://images.pexels.com/photos/17755959/pexels-photo-17755959.jpeg?w=800&q=80',
+    'https://images.pexels.com/photos/5383488/pexels-photo-5383488.jpeg?w=800&q=80',
+    'https://images.pexels.com/photos/8555481/pexels-photo-8555481.jpeg?w=800&q=80',
+    'https://images.pexels.com/photos/6413663/pexels-photo-6413663.jpeg?w=800&q=80'
   ],
   colors: [
     { name: 'Black', value: 'black', hex: '#000000' },
