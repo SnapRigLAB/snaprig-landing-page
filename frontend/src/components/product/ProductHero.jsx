@@ -6,7 +6,7 @@ import { Card } from '../ui/card';
 import { toast } from 'sonner';
 
 const PRODUCT = {
-  name: 'Premium Gym Sling Bag',
+  name: 'Snaprig GymBag M1',
   subtitle: 'Crossbody Shoulder Bag with Water Bottle Holder & Phone Pocket',
   originalPrice: 59.99,
   salePrice: 29.99,
