@@ -44,10 +44,12 @@ export default function ProductHero({ selectedColor, setSelectedColor, quantity,
   };
 
   const handleBuyNow = () => {
-    // Redirect to product page with variant - this shows the working "Pay with SHOP" button
-    const productUrl = `https://${PRODUCT.shopifyStore}/products/snagrip-pro-carrier-m1?variant=${currentVariant.variantId}`;
-    console.log('Buy now - redirecting to product page:', productUrl);
-    window.location.href = productUrl;
+    // Direct checkout URL - will work once payment methods are enabled
+    const checkoutUrl = `https://${PRODUCT.shopifyStore}/cart/${currentVariant.variantId}:${quantity}`;
+    console.log('Redirecting to checkout:', checkoutUrl);
+    
+    // Force redirect
+    window.location.replace(checkoutUrl);
   };
 
   return (
