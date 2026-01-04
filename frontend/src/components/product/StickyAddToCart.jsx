@@ -13,10 +13,10 @@ export default function StickyAddToCart({ show, selectedColor, quantity }) {
   const currentPrice = currentVariant.price;
   
   const handleBuyNow = () => {
-    // Redirect to product page with variant - shows working "Pay with SHOP" button
-    const productUrl = `https://${SHOPIFY_STORE}/products/snagrip-pro-carrier-m1?variant=${currentVariant.variantId}`;
-    console.log('Sticky cart - redirecting to product page:', productUrl);
-    window.location.href = productUrl;
+    // Direct checkout URL
+    const checkoutUrl = `https://${SHOPIFY_STORE}/cart/${currentVariant.variantId}:${quantity}`;
+    console.log('Redirecting to checkout:', checkoutUrl);
+    window.location.replace(checkoutUrl);
   };
 
   return (
